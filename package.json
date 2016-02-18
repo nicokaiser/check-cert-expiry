@@ -1,0 +1,32 @@
+{
+  "name": "check-cert-expiry",
+  "version": "0.0.0",
+  "description": "Check SSL certificate expiry",
+  "main": "index.js",
+  "bin": {
+    "check-cert-expiry": "./bin/check-cert-expiry"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicokaiser/check-cert-expiry.git"
+  },
+  "keywords": [
+    "certificate",
+    "ssl",
+    "tls",
+    "expire",
+    "expiry",
+    "monitor"
+  ],
+  "author": "Nico Kaiser <nico@kaiser.me>",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-promise": "^1.0.8",
+    "eslint-plugin-standard": "^1.3.2"
+  }
+}
