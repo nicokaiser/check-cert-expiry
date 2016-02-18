@@ -12,7 +12,7 @@ if (urls.length < 1) {
   process.exit();
 }
 
-var threshold = argv.t || 14;
+var threshold = argv.d || 14;
 var verbose = argv.v || false;
 
 urls.forEach((entry) => {
