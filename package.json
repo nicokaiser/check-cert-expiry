@@ -12,6 +12,7 @@
   },
   "keywords": [
     "certificate",
+    "cli",
     "ssl",
     "tls",
     "expire",
