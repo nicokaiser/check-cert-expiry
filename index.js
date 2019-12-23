@@ -4,7 +4,7 @@ var url = require('url');
 var parseArgs = require('minimist');
 var checkTls = require('./lib/check-tls');
 
-var argv = parseArgs(process.argv.slice(2), {boolean: 'v'});
+var argv = parseArgs(process.argv.slice(2), { boolean: 'v' });
 var urls = argv._;
 
 if (urls.length < 1) {
@@ -18,6 +18,7 @@ var verbose = argv.v || false;
 urls.forEach(function (entry) {
   var parsed;
   try {
+    // eslint-disable-next-line node/no-deprecated-api
     parsed = url.parse('tls://' + entry);
   } catch (e) {
     console.error('Invalid host "' + entry + '", please use host:port');
